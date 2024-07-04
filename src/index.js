@@ -13,10 +13,9 @@ import navIcon6 from "./assets/img/nav-icon6.svg";
 const ethAdd = "GBRshPopOnSOLPopOnSOLxxPopOnSOLPopOnSOLGBRsh";
 const shortenedEthAdd = "GBRshP...LGBRsh";
 const ticker = "$POP";
-const twitter = "https://twitter.com/igorcatCTO";
-const telegram = "https://t.me/+agaEWftphpkyMzE0";
-const dexscreener =
-  "https://dexscreener.com/solana/5ihfexc5vmwye9cibyqrjtpjpuncbo5gzsg6v3ojpyh4";
+const twitter = "https://twitter.com/";
+const telegram = "https://t.me/starricto";
+const dexscreener = "https://dexscreener.com/";
 
 function importAll(r) {
   let images = [];
