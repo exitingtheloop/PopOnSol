@@ -387,6 +387,7 @@ body {
 
 .header h1 {
   /* Non-accessible color */
+  margin-bottom: 30px !important;
   color: #db93a5 !important;
   text-shadow: -4px 4px 2px #ff3366;
   /* color: #af8602; */
@@ -485,7 +486,7 @@ body {
   }
 
   #picbanner {
-    margin-bottom: 10px !important;
+    margin-bottom: 20px !important;
   }
 
   #menu-section {
@@ -525,7 +526,7 @@ body {
   }
 
   .header h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .header h1::before,

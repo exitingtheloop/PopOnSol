@@ -194,8 +194,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div style={{ margin: "20px", textAlign: "center" }}>
-        Simply by the community, for the community{" "}
-        <a href={twitter}>{ticker}</a>
+        2024 PopOnSolana. © All right reserved.
       </div>
     </footer>
   );
