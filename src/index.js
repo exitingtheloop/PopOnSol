@@ -264,6 +264,13 @@ function BuyGuide() {
                 <p>Switch SOL for {ticker}</p>
               </div>
             </li>
+            <li>
+              <div>
+                <a href="https://raydium.io/swap/" id="buy-btn" class="btn">
+                  Get $POP!
+                </a>
+              </div>
+            </li>
           </ul>
         </header>
       </Col>

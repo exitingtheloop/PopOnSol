@@ -22,6 +22,19 @@
   max-width: 3000px !important;
 }
 
+#buy-btn {
+  font-size: 2rem;
+  font-family: starborn, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #fff;
+  box-shadow: -5px 6px 0 0 #ff3366;
+  border-radius: 20px;
+  background-color: #db93a5;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto !important;
+  width: 200px;
+}
+
 * {
   margin: 0 !important;
   padding: 0;
