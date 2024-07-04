@@ -9,6 +9,12 @@
     url("./fonts/LovedbytheKing-Regular.ttf") format("truetype");
   font-weight: normal;
 }
+@font-face {
+  font-family: "Starborn";
+  src: local("Starborn"), url("./fonts/Starborn.ttf") format("truetype");
+  font-weight: normal;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 
 #main-container {
@@ -73,8 +79,12 @@
 }
 
 .carousel-container h1 {
-  font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 4rem;
+  font-family: saotorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #db93a5 !important;
+  text-shadow: -3px 3px 1px #ff3366;
+  /* color: #af8602; */
+
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -202,7 +212,8 @@ li {
 }
 
 .chonkybanner h1 {
-  font-size: 10rem;
+  text-transform: lowercase !important;
+  font-size: 5rem;
   text-shadow: -6px 6px 2px #ff3366;
   font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
@@ -224,11 +235,6 @@ h1 {
 h3 {
   color: #08415c !important;
   margin-bottom: 10px !important;
-}
-
-.carousel-container span,
-h1 {
-  color: #ff3366;
 }
 
 #chonky-logo {
@@ -359,8 +365,9 @@ body {
 
 .header h3 {
   text-align: center;
-  font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 3rem;
+  font-family: SaoTorpes;
+  font-style: normal !important;
+  font-size: 2rem;
 }
 
 .header h1 {
@@ -449,8 +456,8 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .chonkybanner h1 {
-    text-shadow: -3px 3px 2px #ff3366;
+  .carousel-container h1 {
+    font-size: 2rem;
   }
 
   .chonkybanner {
@@ -490,7 +497,7 @@ body {
   }
 
   .chonkybanner h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   #chonky-logo {
