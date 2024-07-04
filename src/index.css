@@ -1,12 +1,12 @@
 @font-face {
   font-family: "SaoTorpes";
-  src: local("SaoTorpes"), url("./fonts/SaoTorpes.otf") format("opentype");
+  src: local("SaoTorpes"), url("fonts/SaoTorpes.otf") format("opentype");
   font-weight: normal;
 }
 @font-face {
   font-family: "Loved By The King";
   src: local("Loved By The King"),
-    url("./fonts/LovedbytheKing-Regulr.ttf") format("opentype");
+    url("fonts/LovedbytheKing-Regulr.ttf") format("opentype");
   font-weight: normal;
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
@@ -128,7 +128,7 @@
 
 ul {
   display: block;
-  list-style-type: disc;
+  list-style-type: none;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
