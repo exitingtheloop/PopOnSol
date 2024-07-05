@@ -16,6 +16,8 @@ const ticker = "$POP";
 const twitter = "https://twitter.com/";
 const telegram = "https://t.me/starricto";
 const dexscreener = "https://dexscreener.com/";
+const buylink = "https://raydium.io/swap/";
+const footercontent = "2024 PopOnSolana. © All right reserved.";
 
 function importAll(r) {
   let images = [];
@@ -43,11 +45,11 @@ function App() {
   return (
     <Container id="main-container">
       <Header />
-      <Banner mobileMode={isMobile} />
-      <Bannerz />
-      <DividerCC />
-      <Menu />
-      <DividerC />
+      <SocialsHeader mobileMode={isMobile} />
+      <MainBanner />
+      <TopDivider />
+      <Carousel />
+      <BottomDivider />
       <BuyGuide />
       <Footer />
       <TickerTape />
@@ -68,16 +70,16 @@ function Header() {
   );
 }
 
-function Bannerz() {
+function MainBanner() {
   return (
-    <section className="chonkybanner" id="home">
+    <section className="mainbanner" id="home">
       <Container>
         <Row className="align-items-center">
           <Col
             xs={{ span: 12, order: 2 }}
             md={6}
             xl={7}
-            className="leftrightchonkbanner"
+            className="mainBannerCols"
           >
             <TrackVisibility>
               {({ isVisible }) => (
@@ -98,8 +100,8 @@ function Bannerz() {
             xs={{ span: 12, order: 1 }}
             md={6}
             xl={5}
-            id="picbanner"
-            className="leftrightchonkbanner"
+            id="logo-col"
+            className="mainBannerCols"
           >
             <TrackVisibility>
               {({ isVisible }) => (
@@ -108,11 +110,7 @@ function Bannerz() {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img
-                    id="chonky-logo"
-                    src="popjpegs/poplogo.png"
-                    alt="Header Img"
-                  />
+                  <img id="logo" src="popjpegs/poplogo.png" alt="Header Img" />
                 </div>
               )}
             </TrackVisibility>
@@ -123,10 +121,10 @@ function Bannerz() {
   );
 }
 
-function Banner(props) {
+function SocialsHeader(props) {
   const { mobileMode } = props;
   return (
-    <Row className="banner">
+    <Row className="socialsHeader">
       <Col xs={12}>
         <h4> {mobileMode ? shortenedEthAdd : ethAdd} </h4>
         <div className="social-icon">
@@ -145,17 +143,17 @@ function Banner(props) {
   );
 }
 
-function DividerCC() {
+function TopDivider() {
   return <div class="skew-cc"></div>;
 }
 
-function DividerC() {
+function BottomDivider() {
   return <div class="skew-c"></div>;
 }
 
-function Menu() {
+function Carousel() {
   return (
-    <section id="menu-section">
+    <section id="carousel-section">
       <Container>
         <Row>
           <Col xs={12}>
@@ -187,34 +185,6 @@ function Menu() {
         </Row>
       </Container>
     </section>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="footer">
-      <div style={{ margin: "20px", textAlign: "center" }}>
-        2024 PopOnSolana. © All right reserved.
-      </div>
-    </footer>
-  );
-  // return React.createElement("footer", null, "We're currently open!");
-}
-
-function TickerTape() {
-  return (
-    <div class="ticker-wrap">
-      <div class="ticker">
-        <div class="ticker__item">#PopOnSOL</div>
-        <div class="ticker__item">#PopOnSOL</div>
-        <div class="ticker__item">#PopOnSOL</div>
-        <div class="ticker__item">#PopOnSOL</div>
-        <div class="ticker__item">#PopOnSOL</div>
-        <div class="ticker__item">#PopOnSOL</div>
-        <div class="ticker__item">#PopOnSOL</div>
-        <div class="ticker__item">#PopOnSOL</div>
-      </div>
-    </div>
   );
 }
 
@@ -264,7 +234,7 @@ function BuyGuide() {
             </li>
             <li>
               <div>
-                <a href="https://raydium.io/swap/" id="buy-btn" class="btn">
+                <a href={buylink} id="buy-btn" class="btn">
                   Get $POP!
                 </a>
               </div>
@@ -273,6 +243,31 @@ function BuyGuide() {
         </header>
       </Col>
     </Row>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <div style={{ margin: "20px", textAlign: "center" }}>{footercontent}</div>
+    </footer>
+  );
+}
+
+function TickerTape() {
+  return (
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <div class="ticker__item">#PopOnSOL</div>
+        <div class="ticker__item">#PopOnSOL</div>
+        <div class="ticker__item">#PopOnSOL</div>
+        <div class="ticker__item">#PopOnSOL</div>
+        <div class="ticker__item">#PopOnSOL</div>
+        <div class="ticker__item">#PopOnSOL</div>
+        <div class="ticker__item">#PopOnSOL</div>
+        <div class="ticker__item">#PopOnSOL</div>
+      </div>
+    </div>
   );
 }
 
