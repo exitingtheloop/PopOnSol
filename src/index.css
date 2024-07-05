@@ -357,6 +357,22 @@ h3 {
   width: 200px;
 }
 
+.itemBtn {
+  font-size: 2rem;
+  font-family: starborn, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #fff;
+  box-shadow: -5px 6px 0 0 #ff3366;
+  border-radius: 20px;
+  background-color: #db93a5;
+  display: flex;
+  justify-content: center;
+  text-align: left !important;
+  margin: 0 auto !important;
+  margin-top: 10px !important;
+  width: 200px;
+  text-decoration: none;
+}
+
 .buy-guide {
   margin-top: 200px !important;
   margin-bottom: 100px !important;
