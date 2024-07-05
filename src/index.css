@@ -60,6 +60,8 @@ body {
 #main-container {
   padding-bottom: 50px;
   padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
   max-width: 3000px !important;
 }
 
@@ -327,8 +329,7 @@ h3 {
   height: 100px;
   position: absolute;
   left: 0px;
-  background: linear-gradient(to right bottom, #eee5e9 49%, #ffdfc7 50%),
-    linear-gradient(-50deg, #ffdfc7 16px, #ffdfc7 0);
+  background: linear-gradient(to right bottom, #eee5e9 49%, #ffdfc7 50%);
 }
 
 .skew-c {
@@ -387,8 +388,10 @@ h3 {
 #buy-list {
   padding: 10px 300px;
   margin-top: 20px;
-  display: block;
-  list-style-type: none;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -396,18 +399,47 @@ h3 {
   unicode-bidi: isolate;
 }
 
+.guideItem {
+  width: 100%;
+}
+
 #buy-list li {
   margin: 50px 0px !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#buy-list li span {
+  font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
+  padding: 3px 10px;
+  margin-right: 20px !important;
+  font-size: 2rem;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff3366;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transform: translateY(15%);
+  transform: translateY(15%);
 }
 
 #buy-list li h3 {
   color: #08415c !important;
   text-transform: uppercase;
+  text-align: left;
+  margin: 0 !important;
   font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
 }
 
 #buy-list li p {
-  text-align: center;
+  text-align: left;
   color: #08415c;
   font-size: 2rem;
 }

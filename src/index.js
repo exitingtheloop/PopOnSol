@@ -196,7 +196,8 @@ function BuyGuide() {
           <h1>HOW TO BUY?</h1>
           <ul id="buy-list">
             <li>
-              <div>
+              <span>1</span>
+              <div class="guideItem">
                 <h3>Create a wallet</h3>
                 <p>
                   Download Phantom or your wallet of choice from the app store
@@ -206,7 +207,8 @@ function BuyGuide() {
               </div>
             </li>
             <li>
-              <div>
+              <span>2</span>
+              <div class="guideItem">
                 <h3>Buy SOL</h3>
                 <p>
                   Have SOL in your wallet to switch to {ticker} If you dont have
@@ -216,7 +218,8 @@ function BuyGuide() {
               </div>
             </li>
             <li>
-              <div>
+              <span>3</span>
+              <div class="guideItem">
                 <h3>Go to a DEX</h3>
                 <p>
                   Connect to Raydium. Go raydium.io in google chrome or on the
@@ -227,7 +230,8 @@ function BuyGuide() {
               </div>
             </li>
             <li>
-              <div>
+              <span>4</span>
+              <div class="guideItem">
                 <h3>SWAP</h3>
                 <p>Switch SOL for {ticker}</p>
               </div>
