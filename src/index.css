@@ -48,6 +48,10 @@ body {
   padding: 0px;
 }
 
+.hide {
+  display: none !important;
+}
+
 .loader {
   position: fixed;
   color: #fff;
@@ -272,6 +276,34 @@ h3 {
 
 /**************************** MAIN BANNER ****************************/
 
+/**************************** ABOUT ****************************/
+
+#about-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 400px;
+  padding-right: 400px;
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+#about-section h1 {
+  text-transform: lowercase !important;
+  font-size: 5rem;
+  text-shadow: -6px 6px 2px #ff3366;
+  font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#about-section p {
+  text-align: left;
+  color: #08415c;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/**************************** ABOUT ****************************/
+
 /**************************** CAROUSEL ****************************/
 
 #carousel-section {
@@ -295,7 +327,7 @@ h3 {
   text-shadow: -3px 3px 1px #ff3366;
   /* color: #af8602; */
 
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -321,6 +353,99 @@ h3 {
 }
 
 /**************************** CAROUSEL ****************************/
+
+/**************************** CREATE MEMES ****************************/
+
+#create-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 100px !important;
+  margin-bottom: 20px !important;
+}
+
+#create-section h1 {
+  text-transform: lowercase !important;
+  font-size: 5rem;
+  text-shadow: -6px 6px 2px #ff3366;
+  font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 30px !important;
+}
+
+#create-section p {
+  text-align: left;
+  color: #08415c;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#create-arrow {
+  width: 150px;
+  display: flex;
+  margin: 0 auto !important;
+}
+
+#base-display {
+  width: 400px;
+  /*border-radius: 50px;*/
+  border: double 1em transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom right, #fcd4b5, #fcd4b5);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#base-display:hover {
+  border: double 1em transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom right, pink, #ff3366);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#meme-showcase {
+  width: 400px;
+  background-color: #ddc;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 3vh 3vw !important;
+  height: 54vh;
+  padding: 1vmin;
+  position: relative;
+  text-align: center;
+  &:before {
+    border-radius: 2px;
+    bottom: -2vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+    content: "";
+    left: -2vmin;
+    position: absolute;
+    right: -2vmin;
+    top: -2vmin;
+  }
+  &:after {
+    border-radius: 2px;
+    bottom: -2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    content: "";
+    left: -2.5vmin;
+    position: absolute;
+    right: -2.5vmin;
+    top: -2.5vmin;
+  }
+}
+
+/**************************** CREATE MEMES ****************************/
 
 /**************************** DIVIDERS ****************************/
 
@@ -374,7 +499,7 @@ h3 {
 }
 
 .buy-guide {
-  margin-top: 200px !important;
+  margin-top: 150px !important;
   margin-bottom: 100px !important;
   background-color: #eee5e9;
 }
@@ -480,7 +605,7 @@ h3 {
 @media screen and (max-width: 500px) {
   .mainbanner h1 {
     text-shadow: -3px 3px 1px #ff3366;
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 
   .mainbanner {
@@ -494,17 +619,64 @@ h3 {
     padding-bottom: 10px !important;
   }
 
+  #about-display {
+    width: 300px;
+  }
+
+  #about-section h1 {
+    margin-top: 50px !important;
+    text-shadow: -3px 3px 1px #ff3366;
+    font-size: 3.5rem;
+  }
+
+  #about-section p {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  #create-section p {
+    font-size: 1.5rem;
+  }
+
   .carousel-container h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   #carousel-section {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #create-section {
     padding-left: 10px;
     padding-right: 10px;
   }
 
+  #create-section h1 {
+    font-size: 3rem;
+    text-shadow: -3px 3px 1px #ff3366;
+  }
+
+  #base-display {
+    width: 300px;
+  }
+
+  #meme-showcase {
+    display: flex;
+    width: 300px;
+    height: 40vh;
+    padding: 5vmin;
+    margin-left: 30px !important;
+  }
+
+  #about-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
   .buy-guide {
-    margin-top: 10px;
+    margin-top: 100px !important;
   }
 
   .buy-guide h1 {

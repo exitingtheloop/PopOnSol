@@ -47,9 +47,11 @@ function App() {
       <Header />
       <SocialsHeader mobileMode={isMobile} />
       <MainBanner />
+      <About />
       <TopDivider />
       <Carousel />
       <BottomDivider />
+      <CreateMemes />
       <BuyGuide />
       <Footer />
       <TickerTape />
@@ -121,6 +123,38 @@ function MainBanner() {
   );
 }
 
+function About() {
+  return (
+    <section id="about-section">
+      <Container>
+        <Row className="align-items-center">
+          <Col xs={12} className="mainBannerCols">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <h1 style={{ margin: "20px", textAlign: "center" }}>
+                    Who is Pop?
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+}
+
 function SocialsHeader(props) {
   const { mobileMode } = props;
   return (
@@ -178,7 +212,7 @@ function Carousel() {
                 ))}
               </div>
               <h1>
-                <span>FABULOUS MEME-ABILITY!</span>
+                <span>POSIBILITIES ARE ENDLESS!</span>
               </h1>
             </div>
           </Col>
@@ -279,6 +313,175 @@ function Footer() {
     <footer className="footer">
       <div style={{ margin: "20px", textAlign: "center" }}>{footercontent}</div>
     </footer>
+  );
+}
+
+function CreateMemes() {
+  return (
+    <section id="create-section">
+      <Container>
+        <Row className="align-items-center">
+          <Col xs={12} className="mainBannerCols">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <h1 style={{ margin: "20px", textAlign: "center" }}>
+                    Create Yours!
+                  </h1>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col
+            xs={12}
+            md={5}
+            lg={5}
+            className="mainBannerCols d-block d-sm-none"
+          >
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <img
+                    id="meme-showcase"
+                    src="popjpegs/memebase.png"
+                    alt="Header Img"
+                  />
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col xs={5} className="mainBannerCols d-none d-lg-block">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <img
+                    id="base-display"
+                    src="popjpegs/memebase.png"
+                    alt="Header Img"
+                  />
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col xs={2} className="mainBannerCols d-none d-lg-block">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <img
+                    id="create-arrow"
+                    src="popjpegs/arrow.png"
+                    alt="Header Img"
+                  />
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col xs={5} className="mainBannerCols d-none d-lg-block">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <img
+                    id="meme-showcase"
+                    src="popjpegs/dressuppop.gif"
+                    alt="Header Img"
+                  />
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} className="mainBannerCols">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <p>
+                    This is the meme's base image. Save it and start creating
+                    your version!
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+}
+
+function CreateYours() {
+  return (
+    <section id="about-section">
+      <Container>
+        <Row className="align-items-center">
+          <Col xs={{ span: 12, order: 1 }} md={6} className="mainBannerCols">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <h1 style={{ margin: "20px", textAlign: "center" }}>
+                    Who is Pop?
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col
+            xs={{ span: 12, order: 2 }}
+            md={6}
+            id="logo-col"
+            className="mainBannerCols"
+          >
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__zoomIn" : ""
+                  }
+                >
+                  <img
+                    id="about-display"
+                    src="popjpegs/dressuppop.gif"
+                    alt="Header Img"
+                  />
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 }
 
