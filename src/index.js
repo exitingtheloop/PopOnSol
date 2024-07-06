@@ -351,7 +351,7 @@ function CreateMemes() {
                 >
                   <img
                     id="meme-showcase"
-                    src="popjpegs/memebase.png"
+                    src="popjpegs/MEMEBASE.png"
                     alt="Header Img"
                   />
                 </div>
@@ -368,7 +368,7 @@ function CreateMemes() {
                 >
                   <img
                     id="base-display"
-                    src="popjpegs/memebase.png"
+                    src="popjpegs/MEMEBASE.png"
                     alt="Header Img"
                   />
                 </div>
@@ -402,7 +402,7 @@ function CreateMemes() {
                 >
                   <img
                     id="meme-showcase"
-                    src="popjpegs/dressuppop.gif"
+                    src="popjpegs/DRESSUPPOP.gif"
                     alt="Header Img"
                   />
                 </div>
