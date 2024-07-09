@@ -34,6 +34,11 @@
   box-sizing: border-box;
 }
 
+.Toastify__toast-body {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -135,6 +140,23 @@ body {
   right: 0;
 }
 
+.contractClip {
+  align-items: center;
+  background-color: #fff;
+  color: #08415c !important;
+  border: 2px solid #000;
+  border-radius: 100px;
+  box-shadow: -5px 6px 0 0 #bf4976;
+  font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 15px !important;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
 .contractCopy {
   font-size: 16px;
   margin-top: var(--v-small);
@@ -178,8 +200,8 @@ body {
   align-items: center;
 }
 .social-icon a {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px !important;
@@ -319,6 +341,7 @@ h3 {
   padding-top: 70px;
   width: calc(2 * var(--no-of-slides));
   margin: 30px 0 !important;
+  margin-top: 60px !important;
 }
 
 .carousel-container h1 {
@@ -474,6 +497,7 @@ h3 {
   font-family: starborn, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #fff;
   box-shadow: -5px 6px 0 0 #ff3366;
+  border: 2px solid #000;
   border-radius: 20px;
   background-color: #db93a5;
   display: flex;
@@ -489,6 +513,7 @@ h3 {
   box-shadow: -5px 6px 0 0 #ff3366;
   border-radius: 20px;
   background-color: #db93a5;
+  border: 2px solid #000;
   display: flex;
   justify-content: center;
   text-align: left !important;
@@ -664,9 +689,9 @@ h3 {
   #meme-showcase {
     display: flex;
     width: 300px;
-    height: 40vh;
+    height: 50vh;
     padding: 5vmin;
-    margin-left: 30px !important;
+    margin-left: 15px !important;
   }
 
   #about-section {
@@ -708,6 +733,15 @@ h3 {
   .header h1::before,
   .header h1::after {
     width: 2rem;
+  }
+
+  .social-icon a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contractClip {
+    box-shadow: -3px 4px 0 0 #bf4976;
   }
 }
 
