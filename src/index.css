@@ -26,6 +26,7 @@
   --custom-width: 200px;
   --slide-height: 200px;
   --iteration-time: 60s;
+  --base-light-color: #f5f0f2;
 }
 
 * {
@@ -47,7 +48,7 @@ body {
   font-family: "Roboto Mono", sans-serif;
   color: #252525;
   font-weight: 400;
-  background-color: #eee5e9 !important;
+  background-color: var(--base-light-color) !important;
   border-bottom: 1.6rem solid #fff;
   min-height: 100vh;
   padding: 0px;
@@ -430,7 +431,7 @@ h3 {
 
 #meme-showcase {
   width: 400px;
-  background-color: #ddc;
+  background-color: #fcd4b5;
   border: solid 5vmin #eee;
   border-bottom-color: #fff;
   border-left-color: #eee;
@@ -477,7 +478,11 @@ h3 {
   height: 100px;
   position: absolute;
   left: 0px;
-  background: linear-gradient(to right bottom, #eee5e9 49%, #ffdfc7 50%);
+  background: linear-gradient(
+    to right bottom,
+    var(--base-light-color) 49%,
+    #ffdfc7 50%
+  );
 }
 
 .skew-c {
@@ -485,7 +490,11 @@ h3 {
   height: 100px;
   position: absolute;
   left: 0px;
-  background: linear-gradient(to left bottom, #ffdfc7 49%, #eee5e9 50%);
+  background: linear-gradient(
+    to left bottom,
+    #ffdfc7 49%,
+    var(--base-light-color) 50%
+  );
 }
 
 /**************************** DIVIDERS ****************************/
@@ -526,7 +535,7 @@ h3 {
 .buy-guide {
   margin-top: 150px !important;
   margin-bottom: 100px !important;
-  background-color: #eee5e9;
+  background-color: var(--base-light-color);
 }
 
 .buy-guide h3 {
