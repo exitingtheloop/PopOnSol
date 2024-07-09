@@ -152,10 +152,14 @@ function About() {
                     Who is Pop?
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Short for Popcorn, Pop is a fabulous, pampered Maltese who
+                    lives life like a true princess. Surrounded by devoted
+                    admirers who woof her to the moon and back, Pop's royal
+                    lifestyle is nothing short of majestic. The base meme image
+                    was snapped with Pop's full awareness that she was about to
+                    indulge the Solana meme space, her cheeky grin says it all!
+                    Pop isn't like any other meme, it's a celebration of sass,
+                    style, and a whole lot of fluff!
                   </p>
                 </div>
               )}
