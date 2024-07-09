@@ -521,6 +521,17 @@ function CreateYours() {
   );
 }
 
+function Tokenomics() {
+  return (
+    <section id="tokenomics-section">
+      <Row>
+        <Col xs={12}></Col>
+        <h1>The Boring Stuff: Pop-onomics!</h1>
+      </Row>
+    </section>
+  );
+}
+
 function TickerTape() {
   return (
     <div className="ticker-wrap">
