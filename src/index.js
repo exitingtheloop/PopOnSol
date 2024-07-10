@@ -47,6 +47,33 @@ function App() {
 
   return (
     <Container id="main-container">
+      <Doodle
+        class="doodle"
+        rule={`	:doodle {
+          @grid: 10x10;
+          @size: 100vmax;
+          grid-gap: 5px;position: fixed; top: 0; left: 0;
+          z-index: -1; 
+          }
+          
+          background-color: hsla(@r(360), 85%, @r(85%, 90%), @r(.6,.9));
+          transform: scale(@rand(.1, 1.75));
+          border-radius: @rand(0, 100%);
+          @shape: clover 5;
+            
+          animation: test infinite @r(50s, 150s) linear;
+          
+          @keyframes test {
+            0% {
+              transform: translate3d(@r(0, 0, 0));
+            }
+            50% {
+              transform: translate3d(@r(-500%, 1000%), @r(-500%, 1000%), 0);
+            }
+            100% {
+              transform: translate3d(0, 0, 0);
+            }`}
+      ></Doodle>
       <ToastContainer autoClose={5000} />
       <Header />
       <SocialsHeader mobileMode={isMobile} />
