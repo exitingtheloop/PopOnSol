@@ -144,6 +144,7 @@ function About() {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
+                  id="about-wrapper"
                   className={
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
@@ -161,6 +162,17 @@ function About() {
                     Pop isn't like any other meme, it's a celebration of sass,
                     style, and a whole lot of fluff!
                   </p>
+                  <div id="video-wrapper">
+                    <iframe
+                      id="pop-video"
+                      src="https://www.youtube.com/embed/cPpVFpead5k?si=rfcRve0kIsTMV0C0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               )}
             </TrackVisibility>

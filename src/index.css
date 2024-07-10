@@ -412,6 +412,24 @@ h3 {
   margin: 0 auto !important;
 }
 
+#video-wrapper {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#pop-video {
+  border: double 2.5em transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom right, #fcd4b5, #fcd4b5);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin: 0 auto !important;
+  margin-top: 50px !important;
+  display: flex;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
 #base-display {
   width: 400px;
   /*border-radius: 50px;*/
@@ -636,8 +654,45 @@ h3 {
 /**************************** FOOTER ****************************/
 
 /**************************** RESPONSIVENESS ****************************/
+@media screen and (max-width: 1150px) {
+  #about-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #base-display {
+    width: 300px;
+  }
+
+  #meme-showcase {
+    margin: 3vh auto !important;
+    display: flex;
+    width: 320px;
+    height: 50vh;
+    padding: 5vmin;
+  }
+
+  #video-wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  #buy-list {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
 
 @media screen and (max-width: 500px) {
+  #video-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #pop-video {
+    border: double 0.5em transparent;
+  }
+
   .mainbanner h1 {
     text-shadow: -3px 3px 1px #ff3366;
     font-size: 3.2rem;
@@ -731,7 +786,7 @@ h3 {
   }
 
   #buy-list {
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     margin-top: 20px;
   }
 
