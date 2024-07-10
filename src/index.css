@@ -26,13 +26,18 @@
   --custom-width: 200px;
   --slide-height: 200px;
   --iteration-time: 60s;
-  --base-light-color: #f5f0f2;
+  --base-light-color: rgba(245, 240, 242, 0.5);
 }
 
 * {
   margin: 0 !important;
   padding: 0;
   box-sizing: border-box;
+}
+
+.doodle {
+  position: fixed !important;
+  z-index: -1 !important;
 }
 
 .Toastify__toast-body {
@@ -52,6 +57,7 @@ body {
   border-bottom: 1.6rem solid #fff;
   min-height: 100vh;
   padding: 0px;
+  z-index: 100;
 }
 
 .hide {
@@ -73,6 +79,7 @@ body {
   padding-left: 0px;
   padding-right: 0px;
   max-width: 3000px !important;
+  background-color: var(--base-light-color);
 }
 
 .btn {
@@ -335,7 +342,7 @@ h3 {
   justify-content: center;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #ffdfc7;
+  background-color: rgba(255, 179, 215, 0.2);
 }
 
 .carousel-container {
@@ -497,11 +504,7 @@ h3 {
   height: 100px;
   position: absolute;
   left: 0px;
-  background: linear-gradient(
-    to right bottom,
-    var(--base-light-color) 49%,
-    #ffdfc7 50%
-  );
+  background: linear-gradient(to right bottom, transparent 49%, #ffdfc7 50%);
 }
 
 .skew-c {
@@ -554,7 +557,7 @@ h3 {
 .buy-guide {
   margin-top: 150px !important;
   margin-bottom: 100px !important;
-  background-color: var(--base-light-color);
+  background-color: transparent;
 }
 
 .buy-guide h3 {
