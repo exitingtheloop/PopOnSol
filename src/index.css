@@ -462,7 +462,7 @@ h3 {
   box-sizing: border-box;
   display: inline-block;
   margin: 3vh 3vw !important;
-  height: 54vh;
+  height: 500px;
   padding: 1vmin;
   position: relative;
   text-align: center;
@@ -668,8 +668,8 @@ h3 {
     margin: 3vh auto !important;
     display: flex;
     width: 320px;
-    height: 50vh;
-    padding: 5vmin;
+    height: 360px;
+    padding: 1vmin;
   }
 
   #video-wrapper {
@@ -680,6 +680,12 @@ h3 {
   #buy-list {
     padding-left: 100px !important;
     padding-right: 100px !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #logo {
+    width: 300px;
   }
 }
 

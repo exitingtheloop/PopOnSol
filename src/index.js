@@ -390,9 +390,10 @@ function CreateMemes() {
           </Col>
           <Col
             xs={12}
-            md={5}
+            sm={12}
+            md={12}
             lg={5}
-            className="mainBannerCols d-block d-sm-none"
+            className="mainBannerCols d-block d-lg-none"
           >
             <TrackVisibility>
               {({ isVisible }) => (
