@@ -47,7 +47,6 @@ function App() {
 
   return (
     <Container id="main-container">
-      <CssDoodle />
       <ToastContainer autoClose={5000} />
       <Header />
       <SocialsHeader mobileMode={isMobile} />
