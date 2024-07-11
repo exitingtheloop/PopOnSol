@@ -8,7 +8,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
-import Doodle from "./doodle";
 import navIcon3 from "./assets/img/nav-icon3.svg";
 import navIcon4 from "./assets/img/nav-icon4.svg";
 import navIcon6 from "./assets/img/nav-icon6.svg";
