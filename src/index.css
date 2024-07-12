@@ -349,15 +349,13 @@ h3 {
   justify-content: center;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: rgba(255, 179, 215, 0.2);
+  background-color: rgba(252, 212, 181, 0.3);
 }
 
 .carousel-container {
   overflow: hidden;
-  padding-top: 70px;
   width: calc(2 * var(--no-of-slides));
-  margin: 30px 0 !important;
-  margin-top: 60px !important;
+  margin: 70px 0 !important;
 }
 
 .carousel-container h1 {
