@@ -3,7 +3,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import "./css-doodle.min.js";
 import "bootstrap/dist/css/bootstrap.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
@@ -12,6 +11,7 @@ import "animate.css";
 import navIcon3 from "./assets/img/nav-icon3.svg";
 import navIcon4 from "./assets/img/nav-icon4.svg";
 import navIcon6 from "./assets/img/nav-icon6.svg";
+import { CSSDoodle } from "css-doodle/component";
 
 const ethAdd = "GBRshPopOnSOLPopOnSOLxxPopOnSOLPopOnSOLGBRsh";
 const shortenedEthAdd = "GBRshP...LGBRsh";
@@ -40,6 +40,50 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const isMobile = useMediaQuery({ query: "(max-width: 520px)" });
+
+  useEffect(() => {
+    // Some random colors
+    const colors = ["#ffe0f0", "#ffbfdf", "#ffd9ec", "#ffabd5", "#ff8fc7"];
+
+    const numBalls = 20;
+    const balls = [];
+
+    for (let i = 0; i < numBalls; i++) {
+      let ball = document.createElement("div");
+      ball.classList.add("ball");
+      ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+      ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+      ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+      ball.style.transform = `scale(${Math.random() * (1.75 - 0.1) + 0.1})`;
+      ball.style.width = `${Math.random() * (3 - 0.1) + 0.1}em`;
+      ball.style.height = ball.style.width;
+
+      balls.push(ball);
+      document.body.append(ball);
+    }
+
+    // Keyframes
+    balls.forEach((el, i, ra) => {
+      let to = {
+        x: Math.random() * (i % 2 === 0 ? -11 : 11),
+        y: Math.random() * 12,
+      };
+
+      let anim = el.animate(
+        [
+          { transform: "translate(0, 0)" },
+          { transform: `translate(${to.x}rem, ${to.y}rem)` },
+        ],
+        {
+          duration: (Math.random() * (150 - 50) + 50) * 60, // random duration
+          direction: "alternate",
+          fill: "both",
+          iterations: Infinity,
+          easing: "linear",
+        }
+      );
+    });
+  });
 
   if (loading) {
     return <div className="loader">Loading...</div>;
