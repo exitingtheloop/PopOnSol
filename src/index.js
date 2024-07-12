@@ -45,7 +45,7 @@ function App() {
     // Some random colors
     const colors = ["#ffe0f0", "#ffbfdf", "#ffd9ec", "#ffabd5", "#ff8fc7"];
 
-    const numBalls = isMobile ? 10 : 20;
+    const numBalls = isMobile ? 15 : 20;
     const balls = [];
 
     for (let i = 0; i < numBalls; i++) {
