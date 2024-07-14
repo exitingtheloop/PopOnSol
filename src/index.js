@@ -236,17 +236,6 @@ function About() {
                     Pop isn't like any other meme, it's a celebration of sass,
                     style, and a whole lot of fluff!
                   </p>
-                  <div id="video-wrapper">
-                    <iframe
-                      id="pop-video"
-                      src="https://www.youtube.com/embed/cPpVFpead5k?si=rfcRve0kIsTMV0C0"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
                 </div>
               )}
             </TrackVisibility>
