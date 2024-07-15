@@ -16,8 +16,8 @@ import { CSSDoodle } from "css-doodle/component";
 const ethAdd = "GBRshPopOnSOLPopOnSOLxxPopOnSOLPopOnSOLGBRsh";
 const shortenedEthAdd = "GBRshP...LGBRsh";
 const ticker = "$POP";
-const twitter = "https://twitter.com/";
-const telegram = "https://t.me/starricto";
+const twitter = "https://x.com/PopOnSolana";
+const telegram = "https://t.me/popcornsol";
 const dexscreener = "https://dexscreener.com/";
 const buylink = "https://raydium.io/swap/";
 const footercontent = "2024 PopOnSolana. © All right reserved.";
@@ -227,14 +227,14 @@ function About() {
                     Who is Pop?
                   </h1>
                   <p>
-                    Short for Popcorn, Pop is a fabulous, pampered Maltese who
-                    lives life like a true princess. Surrounded by devoted
-                    admirers who woof her to the moon and back, Pop's royal
-                    lifestyle is nothing short of majestic. The base meme image
-                    was snapped with Pop's full awareness that she was about to
-                    indulge the Solana meme space, her cheeky grin says it all!
-                    Pop isn't like any other meme, it's a celebration of sass,
-                    style, and a whole lot of fluff!
+                    Hello there! I'm Pop, short for Popcorn. I'm a fabulous,
+                    pampered Maltese who lives life like a true princess.
+                    Surrounded by my devoted admirers who woof me to the moon
+                    and back, my royal lifestyle is nothing short of majestic.
+                    The base meme image was snapped with my full awareness that
+                    I'm' about to indulge the Solana meme space, my cheeky grin
+                    at the time says it all! Pop isn't like any other meme, I'm
+                    a celebration of sass, style, and a whole lot of fluff!
                   </p>
                 </div>
               )}
