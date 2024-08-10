@@ -217,108 +217,119 @@ function DressupMemes() {
   };
 
   return (
-    <Row>
-      <Col xs={12}>
-        <div class="overlay-parts">
-          <select
-            id="head-select"
-            value={selectedHead}
-            onChange={handleHeadChange}
-          >
-            <option value="none">Head</option>
-            <option value="queen-crown">Head 1</option>
-            <option value="santahat">Head 2</option>
-          </select>
+    <section id="dressup-section">
+      <video autoPlay loop muted>
+        <source src="popjpegs/nimbus.mp4" type="video/mp4" />
+      </video>
+      <Container>
+        <Row>
+          <Col xs={12}>
+            <div class="overlay-parts">
+              <select
+                id="head-select"
+                value={selectedHead}
+                onChange={handleHeadChange}
+              >
+                <option value="none">Head</option>
+                <option value="queen-crown">Head 1</option>
+                <option value="santahat">Head 2</option>
+              </select>
 
-          <select
-            id="eyes-select"
-            value={selectedEyes}
-            onChange={handleEyesChange}
-          >
-            <option value="none">Eyes</option>
-            <option value="pixelshades">Eyes 1</option>
-            <option value="superpop">Eyes 2</option>
-            <option value="aviators">Eyes 3</option>
-          </select>
-        </div>
-      </Col>
-      <Col xs={12}>
-        <div class="overlay-parts">
-          <select
-            id="hand-select"
-            value={selectedHand}
-            onChange={handleHandChange}
-          >
-            <option value="none">Hand</option>
-            <option value="giftbox">Hand 1</option>
-            <option value="queen-staff">Hand 2</option>
-          </select>
+              <select
+                id="eyes-select"
+                value={selectedEyes}
+                onChange={handleEyesChange}
+              >
+                <option value="none">Eyes</option>
+                <option value="pixelshades">Eyes 1</option>
+                <option value="superpop">Eyes 2</option>
+                <option value="aviators">Eyes 3</option>
+              </select>
+            </div>
+          </Col>
+          <Col xs={12}>
+            <div class="overlay-parts">
+              <select
+                id="hand-select"
+                value={selectedHand}
+                onChange={handleHandChange}
+              >
+                <option value="none">Hand</option>
+                <option value="giftbox">Hand 1</option>
+                <option value="queen-staff">Hand 2</option>
+              </select>
 
-          <select
-            id="background-select"
-            value={selectedBackground}
-            onChange={handleBackgroundChange}
-          >
-            <option value="none">Background</option>
-            <option value="sanfo">Background 1</option>
-            <option value="desert">Background 2</option>
-            <option value="hawaii">Background 3</option>
-          </select>
-        </div>
-      </Col>
-      <Col xs={12}>
-        <div class="meme-container">
-          <img
-            src={
-              selectedBackground
-                ? `popjpegs/background/${selectedBackground}.png`
-                : ""
-            }
-            alt="Background"
-            class="background-overlay"
-            style={{ display: backgroundImageVisible ? "block" : "none" }}
-          />
-          <img src="popjpegs/MEMEBASETRANSP.png" alt="" class="base-image" />
-          <img
-            src={selectedHand ? `popjpegs/hand/${selectedHand}.png` : ""}
-            alt="Hand"
-            class="hand-overlay"
-            style={{ display: handImageVisible ? "block" : "none" }}
-          />
-          <img
-            src={selectedHead ? `popjpegs/head/${selectedHead}.png` : ""}
-            alt="Head"
-            class="head-overlay"
-            style={{ display: headImageVisible ? "block" : "none" }}
-          />
-          <img
-            src={selectedEyes ? `popjpegs/eyes/${selectedEyes}.png` : ""}
-            alt="Eyes"
-            class="eyes-overlay"
-            style={{ display: eyesImageVisible ? "block" : "none" }}
-          />
-        </div>
-      </Col>
-      <Col xs={12}>
-        <div id="meme-note">
-          <p>
-            Image generation takes a moment. If your downloaded image doesn't
-            match your creation. Simply retry downloading!
-          </p>
-        </div>
-        <button
-          onClick={() => {
-            downloadFinalImage();
-            toast.dismiss();
-            toast("Downloading your POP masterpiece! 🐶");
-          }}
-          id="download-meme"
-          className="btn"
-        >
-          DOWNLOAD!
-        </button>
-      </Col>
-    </Row>
+              <select
+                id="background-select"
+                value={selectedBackground}
+                onChange={handleBackgroundChange}
+              >
+                <option value="none">Background</option>
+                <option value="sanfo">Background 1</option>
+                <option value="desert">Background 2</option>
+                <option value="hawaii">Background 3</option>
+              </select>
+            </div>
+          </Col>
+          <Col xs={12}>
+            <div class="meme-container">
+              <img
+                src={
+                  selectedBackground
+                    ? `popjpegs/background/${selectedBackground}.png`
+                    : ""
+                }
+                alt="Background"
+                class="background-overlay"
+                style={{ display: backgroundImageVisible ? "block" : "none" }}
+              />
+              <img
+                src="popjpegs/MEMEBASETRANSP.png"
+                alt=""
+                class="base-image"
+              />
+              <img
+                src={selectedHand ? `popjpegs/hand/${selectedHand}.png` : ""}
+                alt="Hand"
+                class="hand-overlay"
+                style={{ display: handImageVisible ? "block" : "none" }}
+              />
+              <img
+                src={selectedHead ? `popjpegs/head/${selectedHead}.png` : ""}
+                alt="Head"
+                class="head-overlay"
+                style={{ display: headImageVisible ? "block" : "none" }}
+              />
+              <img
+                src={selectedEyes ? `popjpegs/eyes/${selectedEyes}.png` : ""}
+                alt="Eyes"
+                class="eyes-overlay"
+                style={{ display: eyesImageVisible ? "block" : "none" }}
+              />
+            </div>
+          </Col>
+          <Col xs={12}>
+            <div id="meme-note">
+              <p>
+                Image generation takes a moment. If your downloaded image
+                doesn't match your creation. Simply retry downloading!
+              </p>
+            </div>
+            <button
+              onClick={() => {
+                downloadFinalImage();
+                toast.dismiss();
+                toast("Downloading your POP masterpiece! 🐶");
+              }}
+              id="download-meme"
+              className="btn"
+            >
+              DOWNLOAD!
+            </button>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 }
 
@@ -520,6 +531,9 @@ function BottomDivider() {
 function Carousel() {
   return (
     <section id="carousel-section">
+      <video autoPlay loop muted>
+        <source src="popjpegs/clouds.mp4" type="video/mp4" />
+      </video>
       <Container>
         <Row>
           <Col xs={12}>
