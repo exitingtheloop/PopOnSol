@@ -300,7 +300,21 @@ function DressupMemes() {
         </div>
       </Col>
       <Col xs={12}>
-        <button onClick={downloadFinalImage} id="download-meme" className="btn">
+        <div id="meme-note">
+          <p>
+            Image generation takes a moment. If your downloaded image doesn't
+            match your creation. Simply retry downloading!
+          </p>
+        </div>
+        <button
+          onClick={() => {
+            downloadFinalImage();
+            toast.dismiss();
+            toast("Downloading your POP masterpiece! 🐶");
+          }}
+          id="download-meme"
+          className="btn"
+        >
           DOWNLOAD!
         </button>
       </Col>

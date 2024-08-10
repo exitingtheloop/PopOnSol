@@ -106,6 +106,16 @@ body {
 }
 
 /* CREATE MEMES */
+#meme-note {
+  padding-top: 20px;
+  display: flex;
+  color: #08415c;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .overlay-parts select {
   border: 2px solid #08415c;
   color: #08415c;
@@ -785,6 +795,10 @@ h3 {
 }
 
 @media screen and (max-width: 500px) {
+  #meme-note {
+    font-size: 1.5rem;
+  }
+
   .overlay-parts select {
     font-size: 2rem;
     height: 3rem;
