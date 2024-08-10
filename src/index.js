@@ -219,7 +219,7 @@ function DressupMemes() {
   return (
     <section id="dressup-section">
       <video autoPlay loop muted>
-        <source src="popjpegs/nimbus.mp4" type="video/mp4" />
+        <source src="popjpegs/pinkbubbles.mp4" type="video/mp4" />
       </video>
       <Container>
         <Row>
@@ -231,8 +231,14 @@ function DressupMemes() {
                 onChange={handleHeadChange}
               >
                 <option value="none">Head</option>
-                <option value="queen-crown">Head 1</option>
-                <option value="santahat">Head 2</option>
+                <option value="queen-crown">Crown</option>
+                <option value="santahat">SantaHat</option>
+                <option value="dbz">SaiyanHair</option>
+                <option value="fancyhat">FancyHat</option>
+                <option value="maga">MAGACap</option>
+                <option value="barbie">BarbieHat</option>
+                <option value="mcdo">DownBadHat</option>
+                <option value="got">GOTCrown</option>
               </select>
 
               <select
@@ -241,9 +247,10 @@ function DressupMemes() {
                 onChange={handleEyesChange}
               >
                 <option value="none">Eyes</option>
-                <option value="pixelshades">Eyes 1</option>
-                <option value="superpop">Eyes 2</option>
-                <option value="aviators">Eyes 3</option>
+                <option value="pixelshades">PixelShades</option>
+                <option value="superpop">SuperEyes</option>
+                <option value="aviators">Aviators</option>
+                <option value="solshades">SolShades</option>
               </select>
             </div>
           </Col>
@@ -255,8 +262,9 @@ function DressupMemes() {
                 onChange={handleHandChange}
               >
                 <option value="none">Hand</option>
-                <option value="giftbox">Hand 1</option>
-                <option value="queen-staff">Hand 2</option>
+                <option value="giftbox">GiftBox</option>
+                <option value="queen-staff">QueenStaff</option>
+                <option value="dragonegg">DragonEgg</option>
               </select>
 
               <select
@@ -265,9 +273,16 @@ function DressupMemes() {
                 onChange={handleBackgroundChange}
               >
                 <option value="none">Background</option>
-                <option value="sanfo">Background 1</option>
-                <option value="desert">Background 2</option>
-                <option value="hawaii">Background 3</option>
+                <option value="sanfo">Sanfo</option>
+                <option value="desert">Desert</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="mcdo">DownBadBG</option>
+                <option value="solsummer">WeGoinUpBG</option>
+                <option value="btcmatrix">MatrixBG</option>
+                <option value="calmjapan">JapanAmbience</option>
+                <option value="litmountain">CoolMountain</option>
+                <option value="maga">MAGABG</option>
+                <option value="dragons">JustDragons</option>
               </select>
             </div>
           </Col>
@@ -532,7 +547,7 @@ function Carousel() {
   return (
     <section id="carousel-section">
       <video autoPlay loop muted>
-        <source src="popjpegs/clouds.mp4" type="video/mp4" />
+        <source src="popjpegs/bluepinkbubbles.mp4" type="video/mp4" />
       </video>
       <Container>
         <Row>
