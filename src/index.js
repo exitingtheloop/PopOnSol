@@ -98,10 +98,213 @@ function App() {
       <About />
       <Carousel />
       <CreateMemes />
+      <DressupMemes />
       <BuyGuide />
       <Footer />
       <TickerTape />
     </Container>
+  );
+}
+
+function DressupMemes() {
+  const [selectedHead, setSelectedHead] = useState("");
+  const [selectedEyes, setSelectedEyes] = useState("");
+  const [selectedHand, setSelectedHand] = useState("");
+  const [selectedBackground, setSelectedBackground] = useState("");
+  const [finalImage, setFinalImage] = useState(null);
+  const [headImageVisible, setHeadImageVisible] = useState(false);
+  const [eyesImageVisible, setEyesImageVisible] = useState(false);
+  const [handImageVisible, setHandImageVisible] = useState(false);
+  const [backgroundImageVisible, setBackgroundImageVisible] = useState(false);
+
+  useEffect(() => {
+    const generateImage = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 200));
+      await generateFinalImage();
+    };
+    generateImage();
+  }, [selectedHead, selectedEyes, selectedHand, selectedBackground]);
+
+  useEffect(() => {
+    const generateImage = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      await generateFinalImage();
+    };
+    generateImage();
+  }, []);
+
+  const handleHeadChange = (e) => {
+    setSelectedHead(e.target.value);
+    if (e.target.value !== "none") {
+      setHeadImageVisible(true);
+    } else {
+      setHeadImageVisible(false);
+    }
+  };
+
+  const handleEyesChange = (e) => {
+    setSelectedEyes(e.target.value);
+    if (e.target.value !== "none") {
+      setEyesImageVisible(true);
+    } else {
+      setEyesImageVisible(false);
+    }
+  };
+
+  const handleHandChange = (e) => {
+    setSelectedHand(e.target.value);
+    if (e.target.value !== "none") {
+      setHandImageVisible(true);
+    } else {
+      setHandImageVisible(false);
+    }
+  };
+
+  const handleBackgroundChange = (e) => {
+    setSelectedBackground(e.target.value);
+    if (e.target.value !== "none") {
+      setBackgroundImageVisible(true);
+    } else {
+      setBackgroundImageVisible(false);
+    }
+  };
+
+  const generateFinalImage = async () => {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = 870; // adjust to your base image size
+    canvas.height = 1095;
+
+    if (selectedBackground) {
+      const backgroundImage = document.querySelector(`.background-overlay`);
+      ctx.drawImage(backgroundImage, 0, 0);
+    }
+
+    const baseImage = document.querySelector(".base-image");
+    ctx.drawImage(baseImage, 0, 0);
+
+    if (selectedHead) {
+      const headImage = document.querySelector(`.head-overlay`);
+      ctx.drawImage(headImage, 0, 0);
+    }
+
+    if (selectedEyes) {
+      const eyesImage = document.querySelector(`.eyes-overlay`);
+      ctx.drawImage(eyesImage, 0, 0);
+    }
+
+    if (selectedHand) {
+      const handImage = document.querySelector(`.hand-overlay`);
+      ctx.drawImage(handImage, 0, 0);
+    }
+
+    const dataURL = canvas.toDataURL();
+    setFinalImage(dataURL);
+    return Promise.resolve();
+  };
+
+  const downloadFinalImage = async () => {
+    try {
+      await generateFinalImage();
+      const link = document.createElement("a");
+      link.href = finalImage;
+      link.download = "pop-meme.jpg";
+      link.click();
+    } catch (error) {
+      console.error("Error downloading final image:", error);
+    }
+  };
+
+  return (
+    <Row>
+      <Col xs={12}>
+        <div class="overlay-parts">
+          <select
+            id="head-select"
+            value={selectedHead}
+            onChange={handleHeadChange}
+          >
+            <option value="none">Head</option>
+            <option value="queen-crown">Head 1</option>
+            <option value="santahat">Head 2</option>
+          </select>
+
+          <select
+            id="eyes-select"
+            value={selectedEyes}
+            onChange={handleEyesChange}
+          >
+            <option value="none">Eyes</option>
+            <option value="pixelshades">Eyes 1</option>
+            <option value="superpop">Eyes 2</option>
+            <option value="aviators">Eyes 3</option>
+          </select>
+        </div>
+      </Col>
+      <Col xs={12}>
+        <div class="overlay-parts">
+          <select
+            id="hand-select"
+            value={selectedHand}
+            onChange={handleHandChange}
+          >
+            <option value="none">Hand</option>
+            <option value="giftbox">Hand 1</option>
+            <option value="queen-staff">Hand 2</option>
+          </select>
+
+          <select
+            id="background-select"
+            value={selectedBackground}
+            onChange={handleBackgroundChange}
+          >
+            <option value="none">Background</option>
+            <option value="sanfo">Background 1</option>
+            <option value="desert">Background 2</option>
+            <option value="hawaii">Background 3</option>
+          </select>
+        </div>
+      </Col>
+      <Col xs={12}>
+        <div class="meme-container">
+          <img
+            src={
+              selectedBackground
+                ? `popjpegs/background/${selectedBackground}.png`
+                : ""
+            }
+            alt="Background"
+            class="background-overlay"
+            style={{ display: backgroundImageVisible ? "block" : "none" }}
+          />
+          <img src="popjpegs/MEMEBASETRANSP.png" alt="" class="base-image" />
+          <img
+            src={selectedHand ? `popjpegs/hand/${selectedHand}.png` : ""}
+            alt="Hand"
+            class="hand-overlay"
+            style={{ display: handImageVisible ? "block" : "none" }}
+          />
+          <img
+            src={selectedHead ? `popjpegs/head/${selectedHead}.png` : ""}
+            alt="Head"
+            class="head-overlay"
+            style={{ display: headImageVisible ? "block" : "none" }}
+          />
+          <img
+            src={selectedEyes ? `popjpegs/eyes/${selectedEyes}.png` : ""}
+            alt="Eyes"
+            class="eyes-overlay"
+            style={{ display: eyesImageVisible ? "block" : "none" }}
+          />
+        </div>
+      </Col>
+      <Col xs={12}>
+        <button onClick={downloadFinalImage} id="download-meme" className="btn">
+          DOWNLOAD!
+        </button>
+      </Col>
+    </Row>
   );
 }
 
@@ -467,7 +670,7 @@ function CreateMemes() {
                 >
                   <img
                     id="meme-showcase"
-                    src="popjpegs/MEMEBASE.png"
+                    src="popjpegs/DRESSUPPOP.gif"
                     alt="Header Img"
                   />
                 </div>
@@ -532,12 +735,7 @@ function CreateMemes() {
                   className={
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
-                >
-                  <p>
-                    This is the meme's base image. Save it and start creating
-                    your version!
-                  </p>
-                </div>
+                ></div>
               )}
             </TrackVisibility>
           </Col>
