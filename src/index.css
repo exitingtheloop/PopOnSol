@@ -437,6 +437,7 @@ h3 {
   position: relative;
   display: flex;
   justify-content: center;
+  border-top: 10px solid #fff;
   border-bottom: 10px solid #fff;
 }
 
