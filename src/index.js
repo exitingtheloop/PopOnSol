@@ -224,6 +224,7 @@ function DressupMemes() {
       <Container>
         <Row>
           <Col xs={12}>
+            <h1>DRESS-UP POP!</h1>
             <div class="overlay-parts">
               <select
                 id="head-select"

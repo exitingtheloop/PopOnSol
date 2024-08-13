@@ -106,6 +106,7 @@ body {
 }
 
 /* CREATE MEMES */
+
 #meme-note {
   padding-top: 20px;
   display: flex;
@@ -439,6 +440,15 @@ h3 {
   justify-content: center;
   border-top: 10px solid #fff;
   border-bottom: 10px solid #fff;
+}
+
+#dressup-section h1 {
+  text-align: center;
+  text-transform: lowercase !important;
+  font-size: 5rem;
+  text-shadow: -6px 6px 2px #ff3366;
+  font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 30px !important;
 }
 
 #dressup-section video {
@@ -914,7 +924,12 @@ h3 {
   }
 
   #create-section h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    text-shadow: -3px 3px 1px #ff3366;
+  }
+
+  #dressup-section h1 {
+    font-size: 3.5rem;
     text-shadow: -3px 3px 1px #ff3366;
   }
 
