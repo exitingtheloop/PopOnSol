@@ -661,11 +661,11 @@ h3 {
 #buy-btn {
   font-size: 2rem;
   font-family: starborn, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #fff;
+  color: #ff6b90;
   box-shadow: -5px 6px 0 0 #ff3366;
   border: 2px solid #000;
   border-radius: 20px;
-  background-color: #db93a5;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   margin: 0 auto !important;
