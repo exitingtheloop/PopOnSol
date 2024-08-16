@@ -253,6 +253,7 @@ function DressupMemes() {
                 <option value="superpop">SuperEyes</option>
                 <option value="aviators">Aviators</option>
                 <option value="solshades">SolShades</option>
+                <option value="thor">ThorEyes</option>
               </select>
             </div>
           </Col>
