@@ -265,6 +265,11 @@ function DressupMemes() {
                 <option value="none">Hand</option>
                 <option value="giftbox">GiftBox</option>
                 <option value="queen-staff">QueenStaff</option>
+                <option value="pistols">gunz</option>
+                <option value="ak47">BigGun</option>
+                <option value="flowers">Sunflowers</option>
+                <option value="cash">BagOCash</option>
+                <option value="bowl">WaterBowl</option>
                 <option value="dragonegg">DragonEgg</option>
               </select>
 
