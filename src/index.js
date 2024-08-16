@@ -240,6 +240,7 @@ function DressupMemes() {
                 <option value="barbie">BarbieHat</option>
                 <option value="mcdo">DownBadHat</option>
                 <option value="got">GOTCrown</option>
+                <option value="binance">BinanceHat</option>
               </select>
 
               <select
