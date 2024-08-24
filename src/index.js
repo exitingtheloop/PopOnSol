@@ -13,12 +13,13 @@ import navIcon4 from "./assets/img/nav-icon4.svg";
 import navIcon6 from "./assets/img/nav-icon6.svg";
 import { CSSDoodle } from "css-doodle/component";
 
-const ethAdd = "GBRshPopOnSOLPopOnSOLxxPopOnSOLPopOnSOLGBRsh";
-const shortenedEthAdd = "GBRshP...LGBRsh";
+const ethAdd = "AT2VYXbe2Bb9oefpMqqLChk89q4WxFSr195Z6CDLpump";
+const shortenedEthAdd = "AT2VYX...DLpump";
 const ticker = "$POP";
 const twitter = "https://x.com/PopOnSolana";
 const telegram = "https://t.me/popsolmemes";
-const dexscreener = "https://dexscreener.com/";
+const dexscreener =
+  "https://pump.fun/AT2VYXbe2Bb9oefpMqqLChk89q4WxFSr195Z6CDLpump";
 const buylink = "https://raydium.io/swap/";
 const footercontent = "2024 PopOnSolana. © All right reserved.";
 
