@@ -428,7 +428,7 @@ function MainBanner() {
                   }
                 >
                   <h1 style={{ margin: "20px", textAlign: "center" }}>
-                    The Fur-tastic Star <br />
+                    The Fur-tastic Queen <br />
                     on Solana!
                   </h1>
                 </div>
@@ -478,14 +478,14 @@ function About() {
                     Who is Pop?
                   </h1>
                   <p>
-                    Hello there! I'm Pop, short for Popcorn. I'm a fabulous,
-                    pampered Maltese who lives life like a true princess.
-                    Surrounded by my devoted admirers who woof me to the moon
-                    and back, my royal lifestyle is nothing short of majestic.
-                    The base meme image was snapped with my full awareness that
-                    I'm' about to indulge the Solana meme space, my cheeky grin
-                    at the time says it all! Pop isn't like any other meme, I'm
-                    a celebration of sass, style, and a whole lot of fluff!
+                    Hello there! I'm Pop! I'm a fabulous, pampered Maltese who
+                    lives life like a true princess. Surrounded by my devoted
+                    admirers who woof me to the moon and back, my royal
+                    lifestyle is nothing short of majestic. The base meme image
+                    was snapped with my full awareness that I'm' about to
+                    indulge the Solana meme space, my cheeky grin at the time
+                    says it all! Pop isn't like any other meme, I'm a
+                    celebration of sass, style, and a whole lot of fluff!
                   </p>
                 </div>
               )}
