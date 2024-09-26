@@ -528,12 +528,6 @@ function SocialsHeader(props) {
           </svg>
         </section>
         <div className="social-icon">
-          <a href={twitter}>
-            <img src={navIcon3} alt="" />
-          </a>
-          <a href={telegram}>
-            <img src={navIcon4} alt="" />
-          </a>
           <a href={dexscreener}>
             <img src={navIcon6} alt="" />
           </a>
