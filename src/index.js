@@ -13,12 +13,13 @@ import navIcon4 from "./assets/img/nav-icon4.svg";
 import navIcon6 from "./assets/img/nav-icon6.svg";
 import { CSSDoodle } from "css-doodle/component";
 
-const ethAdd = "SNOWSNOWSNOWSNOWSNOWSNOWSNOW";
-const shortenedEthAdd = "SNOW...SNOW";
+const ethAdd = "FpzEwpbP7Z2W9MnfG3Rv7j7RHtn2seC8ygrdNptLpump";
+const shortenedEthAdd = "FpzEwp...tLpump";
 const ticker = "$SNOW";
 const twitter = "https://x.com/PopOnSolana";
 const telegram = "https://t.me/popsolmemes";
-const dexscreener = "https://pump.fun/";
+const dexscreener =
+  "https://pump.fun/FpzEwpbP7Z2W9MnfG3Rv7j7RHtn2seC8ygrdNptLpump";
 const buylink = "https://raydium.io/swap/";
 const footercontent = "2024 QueenOnSolana. © All rights reserved.";
 
