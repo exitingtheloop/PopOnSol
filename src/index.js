@@ -13,15 +13,14 @@ import navIcon4 from "./assets/img/nav-icon4.svg";
 import navIcon6 from "./assets/img/nav-icon6.svg";
 import { CSSDoodle } from "css-doodle/component";
 
-const ethAdd = "AT2VYXbe2Bb9oefpMqqLChk89q4WxFSr195Z6CDLpump";
-const shortenedEthAdd = "AT2VYX...DLpump";
-const ticker = "$POP";
+const ethAdd = "SNOWSNOWSNOWSNOWSNOWSNOWSNOW";
+const shortenedEthAdd = "SNOW...SNOW";
+const ticker = "$SNOW";
 const twitter = "https://x.com/PopOnSolana";
 const telegram = "https://t.me/popsolmemes";
-const dexscreener =
-  "https://pump.fun/AT2VYXbe2Bb9oefpMqqLChk89q4WxFSr195Z6CDLpump";
+const dexscreener = "https://pump.fun/";
 const buylink = "https://raydium.io/swap/";
-const footercontent = "2024 PopOnSolana. © All right reserved.";
+const footercontent = "2024 QueenOnSolana. © All rights reserved.";
 
 function importAll(r) {
   let images = [];
@@ -44,7 +43,7 @@ function App() {
 
   useEffect(() => {
     // Some random colors
-    const colors = ["#ffe0f0", "#ffbfdf", "#ffd9ec", "#ffabd5", "#ff8fc7"];
+    const colors = ["#00c8ff", "#78e2ff", "#778ffc", "#9bacfa", "#c2cdfc"];
 
     const numBalls = isMobile ? 15 : 25;
     const balls = [];
@@ -220,12 +219,12 @@ function DressupMemes() {
   return (
     <section id="dressup-section">
       <video autoPlay loop muted>
-        <source src="popjpegs/pinkbubbles.mp4" type="video/mp4" />
+        <source src="popjpegs/bluebubbles.mp4" type="video/mp4" />
       </video>
       <Container>
         <Row>
           <Col xs={12}>
-            <h1>DRESS-UP POP!</h1>
+            <h1>DRESS-UP SNOW!</h1>
             <div class="overlay-parts">
               <select
                 id="head-select"
@@ -343,7 +342,7 @@ function DressupMemes() {
               onClick={() => {
                 downloadFinalImage();
                 toast.dismiss();
-                toast("Downloading your POP masterpiece! 🐶");
+                toast("Downloading your SNOW masterpiece! 🐶");
               }}
               id="download-meme"
               className="btn"
@@ -429,7 +428,7 @@ function MainBanner() {
                   }
                 >
                   <h1 style={{ margin: "20px", textAlign: "center" }}>
-                    The Fur-tastic Queen <br />
+                    The Fur-tastic snowball <br />
                     on Solana!
                   </h1>
                 </div>
@@ -450,7 +449,7 @@ function MainBanner() {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img id="logo" src="popjpegs/poplogo.png" alt="Header Img" />
+                  <img id="logo" src="popjpegs/snowlogo.png" alt="Header Img" />
                 </div>
               )}
             </TrackVisibility>
@@ -476,16 +475,16 @@ function About() {
                   }
                 >
                   <h1 style={{ margin: "20px", textAlign: "center" }}>
-                    Who is Pop?
+                    Who is SNOW?
                   </h1>
                   <p>
-                    Hello there! I'm Pop! I'm a fabulous, pampered Maltese who
+                    Hello there! I'm Snow! I'm a fabulous, pampered Maltese who
                     lives life like a true princess. Surrounded by my devoted
                     admirers who woof me to the moon and back, my royal
                     lifestyle is nothing short of majestic. The base meme image
                     was snapped with my full awareness that I'm' about to
                     indulge the Solana meme space, my cheeky grin at the time
-                    says it all! Pop isn't like any other meme, I'm a
+                    says it all! Snow isn't like any other meme, I'm a
                     celebration of sass, style, and a whole lot of fluff!
                   </p>
                 </div>
@@ -667,7 +666,7 @@ function BuyGuide() {
             <li>
               <div>
                 <a href={buylink} id="buy-btn" className="btn">
-                  Get $POP!
+                  Get $SNOW!
                 </a>
               </div>
             </li>
@@ -811,7 +810,7 @@ function CreateYours() {
                   }
                 >
                   <h1 style={{ margin: "20px", textAlign: "center" }}>
-                    Who is Pop?
+                    Who is SNOW?
                   </h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -856,7 +855,7 @@ function Tokenomics() {
     <section id="tokenomics-section">
       <Row>
         <Col xs={12}></Col>
-        <h1>The Boring Stuff: Pop-onomics!</h1>
+        <h1>The Boring Stuff: SNOW-onomics!</h1>
       </Row>
     </section>
   );
@@ -866,14 +865,14 @@ function TickerTape() {
   return (
     <div className="ticker-wrap">
       <div className="ticker">
-        <div className="ticker__item">#PopOnSOL</div>
-        <div className="ticker__item">#PopOnSOL</div>
-        <div className="ticker__item">#PopOnSOL</div>
-        <div className="ticker__item">#PopOnSOL</div>
-        <div className="ticker__item">#PopOnSOL</div>
-        <div className="ticker__item">#PopOnSOL</div>
-        <div className="ticker__item">#PopOnSOL</div>
-        <div className="ticker__item">#PopOnSOL</div>
+        <div className="ticker__item">SNOW</div>
+        <div className="ticker__item">SNOW</div>
+        <div className="ticker__item">SNOW</div>
+        <div className="ticker__item">SNOW</div>
+        <div className="ticker__item">SNOW</div>
+        <div className="ticker__item">SNOW</div>
+        <div className="ticker__item">SNOW</div>
+        <div className="ticker__item">SNOW</div>
       </div>
     </div>
   );

@@ -53,7 +53,6 @@ body {
   font-family: "Roboto Mono", sans-serif;
   color: #252525;
   font-weight: 400;
-  background-color: var(--base-light-color) !important;
   border-bottom: 1.6rem solid #fff;
   min-height: 100vh;
   padding: 0px;
@@ -86,7 +85,6 @@ body {
   padding-left: 0px;
   padding-right: 0px;
   max-width: 3000px !important;
-  background-color: var(--base-light-color);
 }
 
 .btn {
@@ -180,8 +178,8 @@ body {
 #download-meme {
   font-size: 2rem;
   font-family: starborn, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #ff6b90;
-  box-shadow: -5px 6px 0 0 #ff3366;
+  color: #08415c;
+  box-shadow: -5px 6px 0 0 #58f4ff;
   border: 2px solid #000;
   border-radius: 20px;
   background-color: #fff;
@@ -210,8 +208,8 @@ body {
 .header h1 {
   /* Non-accessible color */
   margin-bottom: 30px !important;
-  color: #db93a5 !important;
-  text-shadow: -4px 4px 2px #ff3366;
+  color: #ffffff !important;
+  text-shadow: -4px 4px 10px #424bff;
   /* color: #af8602; */
   font-family: Starborn, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-transform: uppercase;
@@ -249,7 +247,8 @@ body {
   color: #08415c !important;
   border: 2px solid #000;
   border-radius: 100px;
-  box-shadow: -5px 6px 0 0 #bf4976;
+  box-shadow: -5px 6px 0 0 #58f4ff;
+
   font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.5rem;
   justify-content: center;
@@ -308,11 +307,11 @@ body {
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px !important;
-  box-shadow: -3px 3px 0 0 #bf4976;
+  box-shadow: -3px 3px 0 0 #58f4ff;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid #ff3366;
+  border: 1px solid #424bff;
 }
 .social-icon a::before {
   content: "";
@@ -353,7 +352,8 @@ body {
 .mainbanner h1 {
   text-transform: lowercase !important;
   font-size: 5rem;
-  text-shadow: -6px 6px 2px #ff3366;
+  color: #ffffff !important;
+  text-shadow: -4px 4px 10px #424bff;
   font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -416,7 +416,8 @@ h3 {
 #about-section h1 {
   text-transform: lowercase !important;
   font-size: 5rem;
-  text-shadow: -6px 6px 2px #ff3366;
+  color: #ffffff !important;
+  text-shadow: -4px 4px 10px #424bff;
   font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -446,7 +447,8 @@ h3 {
   text-align: center;
   text-transform: lowercase !important;
   font-size: 5rem;
-  text-shadow: -6px 6px 2px #ff3366;
+  color: #ffffff !important;
+  text-shadow: -4px 4px 2px #424bff;
   font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-bottom: 30px !important;
 }
@@ -477,7 +479,7 @@ h3 {
   justify-content: center;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: rgba(255, 216, 232, 0.404);
+  background-color: rgba(224, 216, 255, 0.404);
   border-top: 10px solid #fff;
   border-bottom: 10px solid #fff;
 }
@@ -490,8 +492,8 @@ h3 {
 
 .carousel-container h1 {
   font-family: saotorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #db93a5 !important;
-  text-shadow: -3px 3px 1px #ff3366;
+  color: #fff !important;
+  text-shadow: -4px 4px 10px #5f5f5f;
   /* color: #af8602; */
 
   font-size: 4rem;
@@ -536,7 +538,8 @@ h3 {
 #create-section h1 {
   text-transform: lowercase !important;
   font-size: 5rem;
-  text-shadow: -6px 6px 2px #ff3366;
+  color: #ffffff !important;
+  text-shadow: -4px 4px 10px #424bff;
   font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-bottom: 30px !important;
 }
@@ -562,7 +565,7 @@ h3 {
 #pop-video {
   border: double 2.5em transparent;
   background-image: linear-gradient(white, white),
-    linear-gradient(to bottom right, #fcd4b5, #fcd4b5);
+    linear-gradient(to bottom right, #a1c2ff, #a1c2ff);
   background-origin: border-box;
   background-clip: content-box, border-box;
   margin: 0 auto !important;
@@ -577,7 +580,7 @@ h3 {
   /*border-radius: 50px;*/
   border: double 1em transparent;
   background-image: linear-gradient(white, white),
-    linear-gradient(to bottom right, #fcd4b5, #fcd4b5);
+    linear-gradient(to bottom right, #78ebff, #a1c2ff);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -585,14 +588,14 @@ h3 {
 #base-display:hover {
   border: double 1em transparent;
   background-image: linear-gradient(white, white),
-    linear-gradient(to bottom right, pink, #ff3366);
+    linear-gradient(to bottom right, #78ebff, #66a3ff);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
 
 #meme-showcase {
   width: 400px;
-  background-color: #fcd4b5;
+  background-color: #a1c2ff;
   border: solid 5vmin #eee;
   border-bottom-color: #fff;
   border-left-color: #eee;
@@ -661,8 +664,8 @@ h3 {
 #buy-btn {
   font-size: 2rem;
   font-family: starborn, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #ff6b90;
-  box-shadow: -5px 6px 0 0 #ff3366;
+  color: #08415c;
+  box-shadow: -5px 6px 0 0 #58f4ff;
   border: 2px solid #000;
   border-radius: 20px;
   background-color: #fff;
@@ -704,8 +707,8 @@ h3 {
 
 .buy-guide h1 {
   font-family: saotorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #db93a5 !important;
-  text-shadow: -3px 3px 1px #ff3366;
+  color: #ffffff !important;
+  text-shadow: -4px 4px 10px #424bff;
 
   text-transform: uppercase;
   text-align: center;
@@ -753,7 +756,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ff3366;
+  background-color: #78e2ff;
   color: #fff;
   font-style: normal;
   font-weight: 400;
@@ -871,8 +874,8 @@ h3 {
   }
 
   .mainbanner h1 {
-    text-shadow: -3px 3px 1px #ff3366;
-    font-size: 3.2rem;
+    color: #ffffff !important;
+    text-shadow: -4px 4px 10px #424bff;
   }
 
   .mainbanner {
@@ -925,12 +928,14 @@ h3 {
 
   #create-section h1 {
     font-size: 3.5rem;
-    text-shadow: -3px 3px 1px #ff3366;
+    color: #cbceff !important;
+    text-shadow: -4px 4px 2px #424bff;
   }
 
   #dressup-section h1 {
     font-size: 3.5rem;
-    text-shadow: -3px 3px 1px #ff3366;
+    color: #cbceff !important;
+    text-shadow: -4px 4px 2px #424bff;
   }
 
   #base-display {
@@ -1042,9 +1047,9 @@ h3 {
   width: 100%;
   overflow: hidden;
   height: 4rem;
-  border-top: 2px solid #ff3366;
-  border-bottom: 2px solid #ff3366;
-  background-color: rgba(219, 147, 165, 0.9);
+  border-top: 2px solid #00c8ff;
+  border-bottom: 2px solid #00c8ff;
+  background-color: rgba(103, 202, 255, 0.9);
   padding-left: 100%;
   box-sizing: content-box;
   z-index: 100;
@@ -1069,8 +1074,7 @@ h3 {
     .ticker__item {
       display: inline-block;
       font-weight: 900;
-      font-family: Loved By The King, Haettenschweiler, "Arial Narrow Bold",
-        sans-serif;
+      font-family: SaoTorpes, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       padding: 0 2rem;
       font-size: 2.5rem;
       color: white;
