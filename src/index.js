@@ -18,7 +18,8 @@ const shortenedEthAdd = "7Mseb4...N1pump";
 const ticker = "$SNOW";
 const twitter = "https://x.com/PopOnSolana";
 const telegram = "https://t.me/popsolmemes";
-const dexscreener = "https://pump.fun/";
+const dexscreener =
+  "https://pump.fun/7Mseb4UpveZqXYFusDH4obvitsDwcY33X1Fa3hN1pump";
 const buylink = "https://raydium.io/swap/";
 const footercontent = "2024 SNOWOnSolana. © All rights reserved.";
 
