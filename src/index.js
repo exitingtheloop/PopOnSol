@@ -13,15 +13,14 @@ import navIcon4 from "./assets/img/nav-icon4.svg";
 import navIcon6 from "./assets/img/nav-icon6.svg";
 import { CSSDoodle } from "css-doodle/component";
 
-const ethAdd = "FpzEwpbP7Z2W9MnfG3Rv7j7RHtn2seC8ygrdNptLpump";
-const shortenedEthAdd = "FpzEwp...tLpump";
+const ethAdd = "SNOWSNOWSNOWSNOWSNOWSNOW";
+const shortenedEthAdd = "SNOW...SNOW";
 const ticker = "$SNOW";
 const twitter = "https://x.com/PopOnSolana";
 const telegram = "https://t.me/popsolmemes";
-const dexscreener =
-  "https://pump.fun/FpzEwpbP7Z2W9MnfG3Rv7j7RHtn2seC8ygrdNptLpump";
+const dexscreener = "https://pump.fun/";
 const buylink = "https://raydium.io/swap/";
-const footercontent = "2024 QueenOnSolana. © All rights reserved.";
+const footercontent = "2024 SNOWOnSolana. © All rights reserved.";
 
 function importAll(r) {
   let images = [];
