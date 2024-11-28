@@ -13,8 +13,8 @@ import navIcon4 from "./assets/img/nav-icon4.svg";
 import navIcon6 from "./assets/img/nav-icon6.svg";
 import { CSSDoodle } from "css-doodle/component";
 
-const ethAdd = "SNOWSNOWSNOWSNOWSNOWSNOW";
-const shortenedEthAdd = "SNOW...SNOW";
+const ethAdd = "7Mseb4UpveZqXYFusDH4obvitsDwcY33X1Fa3hN1pump";
+const shortenedEthAdd = "7Mseb4...N1pump";
 const ticker = "$SNOW";
 const twitter = "https://x.com/PopOnSolana";
 const telegram = "https://t.me/popsolmemes";
